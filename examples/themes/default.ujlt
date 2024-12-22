@@ -1,0 +1,7 @@
+{
+ "css-variables": {
+     "c-primary": "#007BFF",
+     "c-primary-50": "#E3F2FD",
+     "c-primary-100": "#BBDEFB",
+   },
+}

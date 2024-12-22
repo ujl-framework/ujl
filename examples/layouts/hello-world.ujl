@@ -1,0 +1,12 @@
+{
+  "layout": {
+    "type": "container",
+    "id": "main-container",
+    "components": [
+      {
+        "type": "text",
+        "content": "Hello, world!"
+      }
+    ]
+  }
+}

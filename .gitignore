@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+dist/
+pnpm-lock.yaml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Build files
+build/
+*.cache
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
