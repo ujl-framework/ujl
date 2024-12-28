@@ -1,20 +1,45 @@
 {
-  "name": "ujl",
-  "version": "0.1-alpha.1",
-  "description": "",
-  "main": "index.js",
+  "name": "ujl-monorepo",
+  "version": "0.0.1",
+  "description": "monorepo for ujl crafter and friends",
+  "keywords": [
+    "ujl",
+    "svelte",
+    "tailwindcss",
+    "modular"
+  ],
+  "author": "https://ujl-framework.org",
+  "private": true,
+  "type": "module",
+  "license": "",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "pnpm": "^9.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujl-framework/ujl.git"
+  },
   "scripts": {
     "build": "pnpm --filter=* run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm --filter=* run test",
+    "lint": "pnpm --filter=* run lint",
+    "dev": "pnpm --filter=examples/editor dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@9.15.1",
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "svelte"
+      ]
+    }
   }
 }

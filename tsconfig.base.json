@@ -5,7 +5,10 @@
     "moduleResolution": "Node",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ujl-framework/*": ["packages/*/src"]
+    }
   }
 }

@@ -1,8 +1,5 @@
 module.exports = {
-    content: [
-        "./src/**/*.{html,js,svelte,ts}", // search in src folder
-        "../components/src/**/*.{html,js,svelte,ts}" // search in components-package
-    ],
+    content: ["./src/**/*.{html,js,svelte,ts}"],
     theme: {
         extend: {}
     },
