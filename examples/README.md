@@ -20,3 +20,4 @@ The `default.ujlt` file in the `themes/` folder is also used as default configur
 ### Example:
 - **Primary color**: Set `c-primary` to define the main accent color. This color will be set as `--ujl-c-primary` variable in the Renderer's CSS.
 - ... more examples to come.
+
