@@ -3,6 +3,7 @@
 This folder contains example files for Unified JSON Layout (UJL). These examples demonstrate the basic structure and usage of `.ujl` and `.ujlt` files.
 
 ## Structure
+- **`editor-app/`**: A simple web application that uses the UJL Editor.
 - **`layouts/`**: Contains `.ujl` files that define layouts.
     - **hello-world.ujl**: A simple example to get started with UJL.
 - **`themes/`**: Contains `.ujlt` files that define themes using CSS variables.

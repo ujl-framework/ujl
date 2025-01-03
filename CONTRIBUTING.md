@@ -47,6 +47,24 @@ All pull requests require at least one approval before merging into `develop`. T
 - Encourage collaboration and knowledge sharing.
 - Ensure consistency with project goals and architecture.
 
+## Dependency Management Guidelines
+
+At UJL Framework, we strive to provide **flexible, independent, and framework-agnostic packages**. Our approach to dependency management reflects this philosophy and is outlined below:
+
+- **Dev-Dependencies**:  
+  Most dependencies are defined as `devDependencies`, as they are only required during development or the build process. The resulting code is lightweight and self-contained, requiring no additional packages at runtime.
+
+- **Peer-Dependencies**:  
+  `peerDependencies` are used when a package relies on a framework or library that the user must provide. This is common for frameworks like `svelte` or internal dependencies such as `@ujl-framework/core`. Peer Dependencies avoid version conflicts and allow users to maintain control over their environment.
+
+- **Dependencies**:  
+  We largely avoid `dependencies` to ensure maximum independence and reusability of our packages. However, in specific cases, such as end-user applications (e.g., `example/editor-app`), they are used when packages are required at runtime.
+
+**Examples:**
+- **Components Package**: Uses `svelte` as a Peer Dependency because the components run in the user's environment.
+- **Modules Package**: Develops modules that are built into pure JavaScript and utilizes tools like `svelte` and `typescript` as Dev-Dependencies.
+- **Example Editor-App**: Depends on runtime dependencies like `@ujl-framework/core` and `svelte` to ensure the application functions seamlessly.
+
 ## To Be Defined
 As the project grows, we will expand these guidelines to include:
 - Code style standards.

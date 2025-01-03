@@ -8,10 +8,10 @@
     "tailwindcss",
     "modular"
   ],
-  "author": "https://ujl-framework.org",
+  "author": "The UJL-Framework Organization <https://ujl-framework.org>",
   "private": true,
   "type": "module",
-  "license": "",
+  "license": "UNLICENSED",
   "packageManager": "pnpm@9.15.0",
   "engines": {
     "pnpm": "^9.15.0"
@@ -24,16 +24,16 @@
     "build": "pnpm --filter=* run build",
     "test": "pnpm --filter=* run test",
     "lint": "pnpm --filter=* run lint",
-    "dev": "pnpm --filter=examples/editor dev"
+    "dev": "pnpm --filter=@ujl-framework/example-editor run dev"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6"
+    "vite": "^6.0.7"
   },
   "pnpm": {
     "peerDependencyRules": {

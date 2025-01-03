@@ -27,6 +27,7 @@ pnpm install
 ## Project Structure
 
 - **[examples](examples)**: Demonstrates the usage of UJL and supports the development of the UJL Framework by providing example and default content.
+- **[examples/editor-app](examples/editor-app)**: A simple web application that uses the UJL Editor.
 - **[packages/core](packages/core)**: Contains the essential logic and tools for the UJL system.
 - **[packages/modules](packages/modules)**: Contains UJL-specific **building blocks** that integrate directly with the Renderer and Editor.
 - **[packages/components](packages/components)**: Contains reusable **visual elements** for UI design.

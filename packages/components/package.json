@@ -2,28 +2,26 @@
   "name": "@ujl-framework/components",
   "version": "0.0.1",
   "type": "module",
-  "main": "src/index.js",
-  "svelte": "src/index.svelte",
+  "license": "UNLICENSED",
   "exports": {
-    ".": {
-      "svelte": "./src/index.svelte",
-      "default": "./src/index.js"
-    },
-    "./*": "./src/*"
+    ".": "./src/lib/index.ts"
   },
   "peerDependencies": {
-    "svelte": "^5.0.0"
+    "svelte": "^5.0.0",
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "tailwind-variants": "^0.3.0",
+    "bits-ui": "^0.21.16"
   },
   "devDependencies": {
     "svelte": "^5.0.0",
-    "eslint": "^9.17.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "eslint": "^9.17.0"
   },
   "scripts": {
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir ./dist",
     "lint": "eslint src",
     "test": "echo \"No tests configured yet.\""
   },
-  "files": [
-    "src"
-  ]
+  "files": ["src/lib/**/*"]
 }
